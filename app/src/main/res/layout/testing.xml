@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/recycle"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/recycle"
+        android:orientation="vertical"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/state_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1EAEA"
+            android:fontFamily="@font/allerta"
+            android:padding="4dp"
+            android:text="State"
+            android:textAlignment="center"
+            android:textColor="#787070" />
+
+        <TextView
+            android:id="@+id/city_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1EAEA"
+            android:fontFamily="@font/allerta"
+            android:padding="4dp"
+            android:text="City"
+            android:textAlignment="center"
+            android:textColor="#787070" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F1EAEA"
+                    android:drawableTint="@android:color/holo_red_light"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Confirmed"
+                    android:textColor="@android:color/holo_red_light" />
+
+                <TextView
+                    android:id="@+id/confirmed_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F1EAEA"
+                    android:drawableRight="@drawable/ic_baseline_arrow_upward_24"
+                    android:drawableTint="@android:color/holo_red_light"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="TextView"
+                    android:textColor="#787070" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Recovered"
+                    android:textColor="#28A113" />
+
+                <TextView
+                    android:id="@+id/recovered_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:drawableRight="@drawable/ic_baseline_arrow_upward_24"
+                    android:drawableTint="#28A113"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="TextView"
+                    android:textColor="#787070" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:drawableTint="#C81111"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Active"
+                    android:textColor="#1040D1" />
+
+                <TextView
+                    android:id="@+id/active_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:drawableRight="@drawable/ic_baseline_arrow_upward_24"
+                    android:drawableTint="#1040D1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="TextView"
+                    android:textColor="#787070" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="Deceased"
+                    android:textColor="#787070" />
+
+                <TextView
+                    android:id="@+id/deceased_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:drawableRight="@drawable/ic_baseline_arrow_upward_24"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="TextView"
+                    android:textColor="#787070" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
