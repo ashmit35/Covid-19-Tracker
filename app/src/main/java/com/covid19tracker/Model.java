@@ -1,4 +1,4 @@
-package com.example.covid19tracker;
+package com.covid19tracker;
 
 public class Model {
     private String confirmed,active,deceased,recovered,delta_confirmed,delta_deceased,delta_recovered;
